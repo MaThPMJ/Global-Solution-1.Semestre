@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oportunidades | Próximo Passo</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Página de Oportunidades / Vagas do projeto Próximo Passo -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">
+        Próximo<span>Passo</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Início</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="roadmap.html" class="nav__link">Roadmap</a></li>
+          <li><a href="vagas.html" class="nav__link">Oportunidades</a></li>
+          <li><a href="cadastro.html" class="nav__link">Pré-cadastro</a></li>
+          <li><a href="faq.html" class="nav__link">FAQ</a></li>
+          <li><a href="contato.html" class="nav__link nav__link--cta">Contato</a></li>
+          <li><a href="integrantes.html" class="nav__link">Equipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cabeçalho da página -->
+    <section class="page-header">
+      <div class="container">
+        <p class="page-header__eyebrow">Oportunidades</p>
+        <h1>Vagas exemplo alinhadas ao roadmap</h1>
+        <p class="page-header__subtitle">
+          Esta página simula como o Próximo Passo poderia apresentar vagas compatíveis com o perfil
+          do usuário, destacando o nível de aderência e as competências que ainda precisam ser
+          desenvolvidas.
+        </p>
+      </div>
+    </section>
+
+    <!-- Filtros simples + introdução -->
+    <section class="page">
+      <div class="container">
+        <div class="jobs-intro">
+          <p>
+            Para fins de protótipo, as oportunidades abaixo são exemplos estáticos baseados no
+            objetivo de se tornar <strong>Desenvolvedor(a) Front-end Júnior</strong>.
+          </p>
+
+          <div class="jobs-filters card">
+            <h2 class="jobs-filters__title">Filtrar oportunidades (exemplo visual)</h2>
+            <div class="jobs-filters__row">
+              <div class="jobs-filters__group">
+                <label for="filtro-local">Modelo de trabalho</label>
+                <select id="filtro-local" disabled>
+                  <option>Todos</option>
+                  <option>Remoto</option>
+                  <option>Híbrido</option>
+                  <option>Presencial</option>
+                </select>
+              </div>
+
+              <div class="jobs-filters__group">
+                <label for="filtro-nivel">Nível</label>
+                <select id="filtro-nivel" disabled>
+                  <option>Todos</option>
+                  <option>Estágio</option>
+                  <option>Júnior</option>
+                </select>
+              </div>
+            </div>
+            <p class="jobs-filters__note">
+              * Os filtros acima são apenas ilustrativos para a entrega de front-end. A lógica de
+              filtragem real poderia ser implementada em etapas futuras com integração a um
+              back-end ou API.
+            </p>
+          </div>
+        </div>
+
+        <!-- Lista de vagas -->
+        <div class="jobs-grid">
+          <!-- Vaga 1 -->
+          <article class="card job-card">
+            <header class="job-card__header">
+              <div>
+                <h2 class="job-card__title">Desenvolvedor(a) Front-end Júnior</h2>
+                <p class="job-card__company">Tech Future Labs · São Paulo (SP)</p>
+              </div>
+              <span class="badge badge--remoto">Remoto</span>
+            </header>
+
+            <p class="job-card__match">
+              Compatibilidade estimada:
+              <strong>72%</strong>
+            </p>
+            <div class="job-card__bar">
+              <div class="job-card__bar-fill" style="width: 72%"></div>
+            </div>
+
+            <ul class="job-card__meta">
+              <li><strong>Nível:</strong> Júnior</li>
+              <li><strong>Stack:</strong> HTML, CSS, JavaScript, Git</li>
+            </ul>
+
+            <p class="job-card__desc">
+              Vaga focada em desenvolvimento de interfaces responsivas, manutenção de componentes
+              e colaboração com o time de UX/UI em projetos web.
+            </p>
+
+            <div class="job-card__tags">
+              <span class="tag tag--short">Curto prazo</span>
+              <span class="pill pill--focus"></span>
+              <span class="job-card__tag-text">Priorizar JavaScript e responsividade</span>
+            </div>
+          </article>
+
+          <!-- Vaga 2 -->
+          <article class="card job-card">
+            <header class="job-card__header">
+              <div>
+                <h2 class="job-card__title">Estágio em Desenvolvimento Web</h2>
+                <p class="job-card__company">Inova Digital · Remoto</p>
+              </div>
+              <span class="badge badge--estagio">Estágio</span>
+            </header>
+
+            <p class="job-card__match">
+              Compatibilidade estimada:
+              <strong>65%</strong>
+            </p>
+            <div class="job-card__bar">
+              <div class="job-card__bar-fill" style="width: 65%"></div>
+            </div>
+
+            <ul class="job-card__meta">
+              <li><strong>Nível:</strong> Estágio</li>
+              <li><strong>Stack:</strong> HTML, CSS, Git, noções de JS</li>
+            </ul>
+
+            <p class="job-card__desc">
+              Oportunidade para quem está iniciando na área. O foco é aprender na prática, criar
+              landing pages e apoiar o time de desenvolvimento em tarefas do dia a dia.
+            </p>
+
+            <div class="job-card__tags">
+              <span class="tag tag--medium">Médio prazo</span>
+              <span class="pill pill--progress"></span>
+              <span class="job-card__tag-text">Consolidar fundamentos da web</span>
+            </div>
+          </article>
+
+          <!-- Vaga 3 -->
+          <article class="card job-card">
+            <header class="job-card__header">
+              <div>
+                <h2 class="job-card__title">Front-end Júnior (Foco UI)</h2>
+                <p class="job-card__company">Studio UX · Híbrido · São Paulo (SP)</p>
+              </div>
+              <span class="badge badge--hibrido">Híbrido</span>
+            </header>
+
+            <p class="job-card__match">
+              Compatibilidade estimada:
+              <strong>58%</strong>
+            </p>
+            <div class="job-card__bar">
+              <div class="job-card__bar-fill" style="width: 58%"></div>
+            </div>
+
+            <ul class="job-card__meta">
+              <li><strong>Nível:</strong> Júnior</li>
+              <li><strong>Stack:</strong> HTML, CSS, JavaScript, figma (noções)</li>
+            </ul>
+
+            <p class="job-card__desc">
+              Vaga voltada para desenvolvimento de interfaces com foco em experiência do usuário,
+              trabalhando em conjunto com designers para criar componentes reutilizáveis.
+            </p>
+
+            <div class="job-card__tags">
+              <span class="tag tag--long">Médio / longo prazo</span>
+              <span class="pill pill--focus"></span>
+              <span class="job-card__tag-text">Aprofundar JS e UI</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção final: conexão com roadmap -->
+    <section class="section section--cta">
+      <div class="container">
+        <h2>Como as vagas se conectam ao roadmap?</h2>
+        <p>
+          Em uma versão completa da plataforma, a compatibilidade e as recomendações de estudo
+          seriam calculadas a partir dos dados preenchidos pelo usuário e da análise das vagas
+          disponíveis no mercado.
+        </p>
+        <a href="roadmap.html" class="btn btn--primary">Ver exemplo de roadmap sugerido</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>© 2025 Próximo Passo – Global Solution FIAP.</p>
+
+      <nav class="footer__nav">
+        <a href="integrantes.html">Equipe</a>
+        <a href="https://github.com/SEU-USUARIO/proximo-passo"
+           target="_blank"
+           rel="noopener noreferrer">
+          Repositório GitHub
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
