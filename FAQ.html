@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | Próximo Passo</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Página de Perguntas Frequentes do projeto Próximo Passo -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">
+        Próximo<span>Passo</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Início</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="roadmap.html" class="nav__link">Roadmap</a></li>
+          <li><a href="vagas.html" class="nav__link">Oportunidades</a></li>
+          <li><a href="faq.html" class="nav__link nav__link--active">FAQ</a></li>
+          <li><a href="contato.html" class="nav__link nav__link--cta">Contato</a></li>
+          <li><a href="integrantes.html" class="nav__link">Equipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cabeçalho da página -->
+    <section class="page-header">
+      <div class="container">
+        <p class="page-header__eyebrow">FAQ</p>
+        <h1>Perguntas frequentes sobre o Próximo Passo</h1>
+        <p class="page-header__subtitle">
+          Reunimos as principais dúvidas sobre o funcionamento do protótipo, objetivo da solução
+          e como ela se conecta ao tema da Global Solution e ao futuro do trabalho.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção de perguntas e respostas (acordeon) -->
+    <section class="page">
+      <div class="container">
+        <div class="faq-intro">
+          <p>
+            Caso a sua dúvida não esteja listada abaixo, você pode entrar em contato conosco
+            pela página de <a href="contato.html" class="link-contato">Contato.</a>
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>O que é o Próximo Passo?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>
+                O Próximo Passo é uma solução desenvolvida para a Global Solution da FIAP que
+                simula uma plataforma capaz de conectar o perfil do usuário (habilidades,
+                experiências e interesses) a oportunidades de trabalho e um roadmap de estudos
+                personalizado.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 2 -->
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Este site já está funcionando como uma plataforma real?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>
+                Ainda não. Nesta etapa, o site representa um <strong>protótipo front-end</strong>,
+                usado para demonstrar a experiência do usuário, a navegação e a proposta da
+                solução dentro da Global Solution. A parte de integração completa com banco de
+                dados e IA faz parte de fases futuras do projeto.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 3 -->
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Como o Próximo Passo se conecta ao tema “Futuro do Trabalho”?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>
+                O projeto busca aproximar pessoas das competências exigidas pelo mercado de
+                trabalho atual, mostrando não só vagas compatíveis, mas também o caminho de
+                aprendizado necessário para chegar lá. Isso contribui para requalificação,
+                upskilling e empregabilidade em um cenário de constante mudança.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 4 -->
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Quais disciplinas da Global Solution se conectam a este site?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>
+                O protótipo integra conteúdos de Front-end (HTML, CSS e JavaScript) com os
+                conceitos construídos em outras disciplinas, como Python, Inteligência Artificial
+                & Chatbot e Modelagem de Negócios, representando a visão completa da solução.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 5 -->
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Os dados informados no formulário de contato são armazenados?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>
+                No contexto desta entrega, o formulário é utilizado apenas para simular o
+                fluxo de cadastro do usuário. Não há armazenamento real em banco de dados
+                nem uso dos dados para fins comerciais, apenas demonstração acadêmica.
+              </p>
+            </div>
+          </article>
+
+          <!-- FAQ 6 -->
+          <article class="faq__item">
+            <button class="faq__question" aria-expanded="false">
+              <span>Como posso ver a proposta de roadmap e oportunidades?</span>
+              <span class="faq__icon">+</span>
+            </button>
+            <div class="faq__answer" hidden>
+              <p>
+                As páginas <strong>Roadmap</strong> e <strong>Oportunidades</strong> mostram,
+                de forma visual, exemplos de trilhas de estudo e vagas que poderiam ser
+                recomendadas pela plataforma com base no perfil do usuário.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>© 2025 Próximo Passo – Global Solution FIAP.</p>
+
+      <nav class="footer__nav">
+        <a href="integrantes.html">Equipe</a>
+        <a href="https://github.com/SEU-USUARIO/proximo-passo"
+           target="_blank"
+           rel="noopener noreferrer">
+          Repositório GitHub
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
