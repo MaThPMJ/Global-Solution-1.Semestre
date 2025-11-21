@@ -1,0 +1,58 @@
+@media (min-width: 768px) {
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .hero__container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .hero__content {
+    flex: 1.2;
+  }
+
+  .hero__mockup {
+    flex: 1;
+  }
+
+  .grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page__grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    align-items: flex-start;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .roadmap-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .jobs-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+

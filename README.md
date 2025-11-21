@@ -95,6 +95,11 @@ Estrutura de pastas seguindo as regras da disciplina:
 ├── faq.html
 ├── contato.html
 └── integrantes.html
+---
+
+## 🔗 Link do repositório
+
+[Repositório no GitHub – Próximo Passo](https://github.com/MaThPMJ/Global-Solution-1.Semestre)
 
 ```
 ## 💻 Tecnologias utilizadas
