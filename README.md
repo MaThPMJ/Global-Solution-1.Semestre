@@ -100,3 +100,19 @@ Estrutura de pastas seguindo as regras da disciplina:
 ## 🔗 Link do repositório
 
 [Repositório no GitHub – Próximo Passo](https://github.com/MaThPMJ/Global-Solution-1.Semestre)
+
+```
+## 💻 Tecnologias utilizadas
+
+```markdown
+
+- HTML5 – estrutura semântica das páginas e navegação entre telas;  
+- CSS3 – estilos, layout responsivo, uso de Flexbox e Grid;  
+- JavaScript  – interações no front-end (menu mobile, FAQ em acordeon, validação dos formulários);  
+- Git – controle de versão do código-fonte;  
+- GitHub – hospedagem do repositório e, opcionalmente, publicação via GitHub Pages.
+
+```
+## 🔗 Link do repositório
+
+[Repositório no GitHub – Próximo Passo](https://github.com/MaThPMJ/Global-Solution-1.Semestre)

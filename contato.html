@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato | Próximo Passo</title>
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <!-- Página de contato para dúvidas e sugestões sobre o Próximo Passo -->
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">
+        Próximo<span>Passo</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">Início</a></li>
+          <li><a href="sobre.html" class="nav__link">Sobre</a></li>
+          <li><a href="roadmap.html" class="nav__link">Roadmap</a></li>
+          <li><a href="vagas.html" class="nav__link">Oportunidades</a></li>
+          <li><a href="cadastro.html" class="nav__link">Pré-cadastro</a></li>
+          <li><a href="faq.html" class="nav__link">FAQ</a></li>
+          <li><a href="contato.html" class="nav__link nav__link--cta nav__link--active">Contato</a></li>
+          <li><a href="integrantes.html" class="nav__link">Equipe</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Cabeçalho da página -->
+    <section class="page-header">
+      <div class="container">
+        <p class="page-header__eyebrow">Contato</p>
+        <h1>Fale com a equipe do Próximo Passo</h1>
+        <p class="page-header__subtitle">
+          Use este canal para tirar dúvidas sobre o protótipo, enviar sugestões, comentários
+          ou feedbacks sobre a solução desenvolvida na Global Solution.
+        </p>
+      </div>
+    </section>
+
+    <!-- Conteúdo principal: texto + formulário -->
+    <section class="page">
+      <div class="container page__grid">
+        <div class="page__intro">
+          <h2>Quando usar esta página?</h2>
+          <p>
+            Este formulário é indicado para:
+          </p>
+
+          <ul class="page__list">
+            <li>Dúvidas gerais sobre o funcionamento do site;</li>
+            <li>Sugestões de melhoria para a plataforma;</li>
+            <li>Comentários sobre a experiência de navegação;</li>
+            <li>Interesse em entender mais sobre o projeto.</li>
+          </ul>
+
+          <p class="page__note">
+            <strong>Importante:</strong> esta é uma solução acadêmica, criada para a Global
+            Solution FIAP. As mensagens enviadas representam uma simulação de contato
+            com a equipe do projeto.
+          </p>
+        </div>
+
+        <div class="page__form-wrapper">
+          <form id="contact-form" class="form" action="#" method="post" novalidate>
+            <h2 class="form__title">Envie sua mensagem</h2>
+
+            <div class="form__group">
+              <label for="nome">Nome completo</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seunome@email.com"
+                required
+              />
+            </div>
+
+            <div class="form__group">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto" required>
+                <option value="">Selecione uma opção</option>
+                <option value="duvida">Dúvida sobre o projeto</option>
+                <option value="sugestao">Sugestão de melhoria</option>
+                <option value="feedback">Feedback sobre a navegação</option>
+                <option value="interesse">Interesse em entender mais a solução</option>
+              </select>
+            </div>
+
+            <div class="form__group">
+              <label for="mensagem">
+                Mensagem
+              </label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="4"
+                placeholder="Descreva sua dúvida, sugestão ou comentário..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form__group form__group--checkbox">
+              <label>
+                <input type="checkbox" name="aceite" required />
+                Estou ciente de que este site faz parte de um projeto acadêmico
+                da Global Solution FIAP.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__button">
+              Enviar mensagem
+            </button>
+
+            <p class="form__helper">
+              Seus dados não serão utilizados para fins comerciais. Esta é apenas uma simulação
+              de canal de contato da solução.
+            </p>
+
+            <p class="form__feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <p>© 2025 Próximo Passo – Global Solution FIAP.</p>
+
+      <nav class="footer__nav">
+        <a href="integrantes.html">Equipe</a>
+        <a href="https://github.com/SEU-USUARIO/proximo-passo"
+           target="_blank"
+           rel="noopener noreferrer">
+          Repositório GitHub
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
